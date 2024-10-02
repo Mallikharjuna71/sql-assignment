@@ -21,7 +21,8 @@ insert into product_details (sell_date, product) values
 --Query to find for each date the number of different products sold and their names
 select
     sell_date,
-    string_agg(product, ', ') AS product_names
+	count(*) as nums_sold,
+    string_agg(product, ', ') AS product_list
 from
     product_details
 group by
