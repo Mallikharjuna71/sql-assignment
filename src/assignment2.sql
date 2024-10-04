@@ -6,7 +6,6 @@ create table product_details(
 	product nvarchar(20)
 	);
 
-
 -- insert values into the table
 insert into product_details (sell_date, product) values
 				('2020-05-30', 'Headphones'),
