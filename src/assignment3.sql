@@ -1,4 +1,5 @@
-use ecommerce
+use ecommerce;
+
 create table dept_tbl(id_deptname nvarchar(20),emp_name nvarchar(15),salary int);
 
 
