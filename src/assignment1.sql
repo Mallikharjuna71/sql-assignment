@@ -57,7 +57,9 @@ from users u
 inner join sales s on u.userid = s.userid 
 inner join product p on p.product_id = s.product_id
 group by u.userid, s.created_date, p.product_name
-having s.created_date = (select min(created_date) from sales where sales.userid = u.userid)
+having s.created_date = (select min(created_date)
+                        from sales
+                        where sales.userid = u.userid)
 order by u.userid;
 
 --9.What is the most purchased item of each customer and how many times the customer has purchased it: 
