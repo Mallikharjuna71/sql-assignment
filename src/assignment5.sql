@@ -1,4 +1,4 @@
-use ecommerce
+use ecommerce;
 
 --1.create a table named sales_data with columns: product_id, sale_date, and quantity_sold.
 create table sales_data (product_id int,sale_date date,quantity_sold int );
@@ -23,7 +23,8 @@ select *,
 
 from sales_data
 
---4) Retrieve the quantity_sold value from a previous row and compare the quantity_sold.
+--4) Retrieve the quantity_sold value from a previous row and compare the quantity_sold.
+
 select
     product_id,
     sale_date,
