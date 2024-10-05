@@ -1,4 +1,4 @@
-use ecommerce
+use ecommerce;
 
 --create table email_signup
 create table email_signup(
@@ -18,7 +18,7 @@ insert into email_signup (id,email_id,signup_date)
 			(6, 'Hitesh@Twitter.com', '2015-01-01'),
 			(7, 'Rakesh@facebook.com', null);
 
---replacing null values with  ‘1970-01-01’
+--replacing null values with  ï¿½1970-01-01ï¿½
 update email_signup set signup_date = '1970-01-01' where id = 7;
 
 -- Query to find gmail accounts with latest and first signup date and difference
